@@ -36106,7 +36106,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.default = exports.FormStyled = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -36145,6 +36145,8 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var FormStyled = _styledComponents.default.form(_templateObject());
+
+exports.FormStyled = FormStyled;
 
 function AddPost() {
   var _useState = (0, _react.useState)(''),
@@ -36221,6 +36223,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _GlobalContext = require("./GlobalContext");
 
+var _AddPost = require("./AddPost");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -36274,7 +36278,7 @@ function ProfileOptions() {
     });
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Profile Option"), /*#__PURE__*/_react.default.createElement("form", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Profile Option"), /*#__PURE__*/_react.default.createElement(_AddPost.FormStyled, {
     onSubmit: handleNewProfile
   }, /*#__PURE__*/_react.default.createElement("label", null, "New post content"), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
@@ -36296,7 +36300,7 @@ function ProfileOptions() {
 
 var _default = ProfileOptions;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./GlobalContext":"Components/GlobalContext.js"}],"Pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./GlobalContext":"Components/GlobalContext.js","./AddPost":"Components/AddPost.js"}],"Pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36376,7 +36380,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51669" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55976" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

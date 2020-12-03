@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import styled from 'styled-components';
 import  {GlobalContext} from './GlobalContext';
 
-const FormStyled = styled.form `
+export const FormStyled = styled.form `
   display:grid;
   gap: 10px;
   grid-template-columns: 200px;

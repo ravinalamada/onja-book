@@ -1,5 +1,8 @@
 import React, {useState, useContext, useEffect} from 'react';
 import  {GlobalContext} from './GlobalContext';
+import {FormStyled} from './AddPost';
+
+
 
 function ProfileOptions() {
 
@@ -25,7 +28,7 @@ function ProfileOptions() {
   return (
     <div>
       <h2>Profile Option</h2>
-      <form onSubmit={handleNewProfile}>
+      <FormStyled onSubmit={handleNewProfile}>
         <label>New post content</label>
         <input
           type="text"
@@ -41,7 +44,7 @@ function ProfileOptions() {
           required
         />
         <button>Save</button>
-      </form>
+      </FormStyled>
     </div>
   )
 }
