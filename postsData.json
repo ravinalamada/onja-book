@@ -9,10 +9,27 @@
           {
               "likeId": "1",
               "userId": "1234"
-          },
+          }
+      ],
+      "comments": [
           {
-              "likeId": "2",
-              "userId": "12344"
+              "commentId": 1,
+              "userId": "121212",
+              "date": "13/05/1997",
+              "commentTextContent": "Hello, super post."
+          }
+      ]
+  },
+  {
+      "postId": "2",
+      "date": 1459580,
+      "postTextContent": "This is the description",
+      "userId": "121212",
+      "imgUrl": "http://picsum.photos/100",
+      "likes": [
+          {
+              "likeId": "3",
+              "userId": "1234"
           }
       ],
       "comments": [
@@ -21,13 +38,15 @@
               "userId": "121212",
               "date": 12423232423,
               "commentTextContent": "Hello, super post."
-          },
-          {
-              "commentId": 2,
-              "userId": "121212",
-              "date": 12423232423,
-              "commentTextContent": "Hello, super post."
           }
       ]
+  },
+  {
+    "postId": "3",
+    "date": 12423232423,
+    "postTextContent": "This is the description",
+    "userId": "121212",
+    "imgUrl": "http://picsum.photos/100"
   }
+
 ]
