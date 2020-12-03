@@ -1,0 +1,16 @@
+{
+  "name": "onja-book",
+  "version": "1.0.0",
+  "description": "## Statement ## I am going to build a facebook clone It will contain Context, Router, useReducer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  }
+}

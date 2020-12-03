@@ -1,0 +1,33 @@
+[
+  {
+      "postId": "1",
+      "date": 12423232423,
+      "postTextContent": "This is the description",
+      "userId": "121212",
+      "imgUrl": "http://picsum.photos/100",
+      "likes": [
+          {
+              "likeId": "1",
+              "userId": "1234"
+          },
+          {
+              "likeId": "2",
+              "userId": "12344"
+          }
+      ],
+      "comments": [
+          {
+              "commentId": 1,
+              "userId": "121212",
+              "date": 12423232423,
+              "commentTextContent": "Hello, super post."
+          },
+          {
+              "commentId": 2,
+              "userId": "121212",
+              "date": 12423232423,
+              "commentTextContent": "Hello, super post."
+          }
+      ]
+  }
+]
