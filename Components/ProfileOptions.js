@@ -2,8 +2,6 @@ import React, {useState, useContext, useEffect} from 'react';
 import  {GlobalContext} from './GlobalContext';
 import {FormStyled} from './AddPost';
 
-
-
 function ProfileOptions() {
 
   const {state,dispatch} = useContext(GlobalContext);

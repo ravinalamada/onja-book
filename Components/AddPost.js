@@ -27,7 +27,7 @@ function AddPost() {
       likes: [],
       comments: []
     }
-    console.log(newPost);
+
     dispatch({type:"ADD_NEW_POST", newPost})
     resetForm()
   }

@@ -40,6 +40,21 @@ function GlobalContextProvider({children}) {
           users: newUsersArray
         }
       }
+      case "SUBMIT_COMMENT" : {
+        const newPosts = state.posts.map(post => {
+          if (post.postId == action.postId) {
+            return {
+              ...post,
+              comments: [...post.comments, action.comment],
+            };
+          }
+          return post;
+        });
+        return {
+          ...state,
+          posts: newPosts,
+        };
+      }
       default: {
         console.error('No actions defined for', action.type);
         break;
@@ -56,7 +71,7 @@ function GlobalContextProvider({children}) {
   useEffect(() => {
     setTimeout(() => {
       dispatch({type:"LOAD_JSON_DATA"})
-    }, 500)
+    }, 1000)
   }, [])
   return (
     <GlobalContext.Provider value={{state, dispatch}}>

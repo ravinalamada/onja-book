@@ -40,13 +40,5 @@
               "commentTextContent": "Hello, super post."
           }
       ]
-  },
-  {
-    "postId": "3",
-    "date": 12423232423,
-    "postTextContent": "This is the description",
-    "userId": "121212",
-    "imgUrl": "http://picsum.photos/100"
   }
-
 ]
